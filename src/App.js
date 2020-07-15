@@ -1,11 +1,12 @@
 import React from 'react';
+
 import './App.css';
-import Header from "./components/Header";
-import EzTable from "./components/EzTable";
-import Footer from "./components/Footer";
+import Header from "../src/components/Header";
+import EzTable from "../src/components/EzTable";
+import Footer from "../src/components/Footer";
 
 
-function App() {
+ function App() {
   return (
     <div className="App">
       <Header />
