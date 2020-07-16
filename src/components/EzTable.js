@@ -145,7 +145,7 @@ const [state, setState] = React.useState({
                     setTimeout(() => {
                         resolve();
                         if(oldData){
-                            setState(...prevState => {
+                            setState(prevState => {
                                 const data = [...prevState.data];
                                 data[data.indexOf(oldData)]= newData;
                                 return { ...prevState, data};
