@@ -40,7 +40,6 @@ const [state, setState] = React.useState({
         email: "rita.williamson@example.com",
         dob:"1998-02-24",
         phone: "(879)-746-5479",
-        cell: "(418)-566-4728",
     },
     {
         first_name: "Brad",
@@ -169,7 +168,7 @@ const [state, setState] = React.useState({
                 new Promise((resolve) => {
                     setTimeout(() => {
                         resolve();
-                        setState(...prevState => {
+                        setState(prevState => {
                             const data = [...prevState.data];
                             data.splice(data.indexOf(oldData, 1))
                             return { ...prevState, data};
